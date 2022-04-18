@@ -1,0 +1,54 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mcu8.mplabx.project.pic16f17146-curiosity-lpc-demo-code-mplab-mcc",
+        "version": " ",
+        "displayName": "",
+        "projectName": "pic16f17146-curiosity-lpc-demo-code-mplab-mcc",
+        "shortDescription": "This code example demonstrates usage of various peripherals of PIC microcontroller.\r\n Compatible PIC16F171xx and PIC16F181xx family of MCUs are: PIC16F17146, PIC16F17125, PICF17114, PIC16F18146, PIC16F18125, PICF18114",
+        "ide": {
+            "name": "MPLAB X",
+            "semverRange": ">=6.0.0"
+        },
+        "compiler": [
+            {
+                "name": "XC8",
+                "semverRange": "^2.36.0"
+            }
+        ],
+        "dfp": {
+            "name": "",
+            "semverRange": ""
+        },
+        "configurator": {
+            "name": "",
+            "semverRange": ""
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": "PIC16F17146",
+                "versionRange": "*"
+            }
+        },
+        "author": "Babashree Ingale",
+        "peripherals": [],
+        "keywords": [],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}

@@ -4,10 +4,10 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic16f17146-curiosity-lpc-demo-code-mplab-mcc",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Curiosity LPC demo code using PIC16F17146 Microcontroller",
         "projectName": "pic16f17146-curiosity-lpc-demo-code-mplab-mcc",
-        "shortDescription": "This code example demonstrates usage of various peripherals of PIC microcontroller.\r\n Compatible PIC16F171xx and PIC16F181xx family of MCUs are: PIC16F17146, PIC16F17125, PICF17114, PIC16F18146, PIC16F18125, PICF18114",
+        "shortDescription": "This code example demonstrates usage of various peripherals of PIC microcontroller.\r\n Compatible PIC16F171xx and PIC16F181xx family of MCUs are: PIC16F17146, PIC16F17125, PIC16F18146, PIC16F18125",
         "ide": {
             "name": "MPLAB X",
             "semverRange": ">=6.0.0"
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC16F1xxxx_DFP",
+            "semverRange": "^1.13.178"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.1.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -37,8 +37,10 @@
             }
         },
         "author": "Babashree Ingale",
-        "peripherals": [],
-        "keywords": [],
+        "peripherals": [
+		"GPIO","TMR1","ADC","EUSART","PWM","WWDT"
+		],
+        "keywords": ["Melody"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",

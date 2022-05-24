@@ -299,6 +299,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-3fff"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/Work/Github/pic16f17146-curiosity-lpc-demo-code-mplab-mcc/pic16f17146-curiosity-lpc-demo-code-mplab-mcc.X/debug/free/pic16f17146-curiosity-lpc-demo-code-mplab-mcc_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>

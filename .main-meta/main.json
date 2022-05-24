@@ -7,7 +7,7 @@
         "version": "1.0.1",
         "displayName": "Curiosity LPC demo code using PIC16F17146 Microcontroller",
         "projectName": "pic16f17146-curiosity-lpc-demo-code-mplab-mcc",
-        "shortDescription": "This code example demonstrates usage of various peripherals of PIC microcontroller.\r\n Compatible PIC16F17146 and PIC16F18146 family of MCUs are: PIC16F17146, PIC16F17125, PIC16F18146, PIC16F18125",
+        "shortDescription": "This code example demonstrates usage of various peripherals of PIC microcontroller. Compatible PIC16F17146 and PIC16F18146 family of MCUs are: PIC16F17146, PIC16F17125, PIC16F18146, PIC16F18125",
         "ide": {
             "name": "MPLAB X",
             "semverRange": ">=6.0.0"

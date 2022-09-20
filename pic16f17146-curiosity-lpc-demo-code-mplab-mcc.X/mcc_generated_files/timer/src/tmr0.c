@@ -5,7 +5,7 @@
  * 
  * @ingroup tmr0
  * 
- * @brief This is the generated driver implementation file for the TMR0 driver
+ * @brief  Driver implementation for the TMR0 driver
  *
  * @version TMR0 Driver Version 2.0.2
 */
@@ -54,8 +54,8 @@ void Timer0_Initialize(void)
     //TMR0L 0; 
     TMR0L = 0x0;
 
-    //T0CS FOSC/4; T0CKPS 1:512; T0ASYNC synchronised; 
-    T0CON1 = 0x49;
+    //T0CS FOSC/4; T0CKPS 1:2048; T0ASYNC synchronised; 
+    T0CON1 = 0x4B;
 
 
     //Set default callback for TMR0 overflow interrupt

@@ -156,11 +156,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.35</languageToolchainVersion>
+        <languageToolchainVersion>2.40</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC16F1xxxx_DFP" vendor="Microchip" version="1.13.178"/>
+        <pack name="PIC16F1xxxx_DFP" vendor="Microchip" version="1.14.187"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -371,8 +371,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-3fff"/>
-        <property key="programmerToGoFilePath"
-                  value="D:/Work/Github/pic16f17146-curiosity-lpc-demo-code-mplab-mcc/pic16f17146-curiosity-lpc-demo-code-mplab-mcc.X/debug/free/pic16f17146-curiosity-lpc-demo-code-mplab-mcc_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
@@ -401,13 +399,13 @@
         <targetDevice>PIC16F17146</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>pkob4hybrid</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.35</languageToolchainVersion>
+        <languageToolchainVersion>2.40</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC16F1xxxx_DFP" vendor="Microchip" version="1.13.178"/>
+        <pack name="PIC16F1xxxx_DFP" vendor="Microchip" version="1.14.187"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

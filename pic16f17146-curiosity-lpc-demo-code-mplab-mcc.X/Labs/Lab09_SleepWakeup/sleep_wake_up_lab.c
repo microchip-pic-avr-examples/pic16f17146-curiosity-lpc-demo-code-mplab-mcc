@@ -52,7 +52,7 @@ void LAB_SleepWakeUp(void)
 
     if (labState == NOT_RUNNING) 
     {
-        printf("Lab 9: Wake Up From Sleep Using WatchDog Timer \r\n");
+        printf("Lab 9: Wake Up From Sleep Using Watchdog Timer \r\n");
         LED_D4_LAT = LED_D6_LAT = HIGH;
         LED_D5_LAT = LED_D7_LAT = LOW;
        

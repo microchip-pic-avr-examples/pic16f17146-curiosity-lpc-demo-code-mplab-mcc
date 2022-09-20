@@ -5,7 +5,7 @@
   *
   * @ingroup tmr1
   *
-  * @brief This file contains the driver code for TMR1 module.
+  * @brief Driver implementation for the TMR1 driver
   *
   * @version TMR1 Driver Version 3.0.1
 */
@@ -61,12 +61,12 @@ void Timer1_Initialize(void)
     T1GCON = 0x0;
     //TGSS T1GPPS; 
     T1GATE = 0x0;
-    //TMRCS FOSC/4; 
-    T1CLK = 0x1;
-    //TMRH 164; 
-    TMR1H = 0xA4;
-    //TMRL 114; 
-    TMR1L = 0x72;
+    //TMRCS MFINTOSC_31.25kHz; 
+    T1CLK = 0x7;
+    //TMRH 194; 
+    TMR1H = 0xC2;
+    //TMRL 246; 
+    TMR1L = 0xF6;
 
     // Load the TMR1 value to reload variable
     timer1ReloadVal=(uint16_t)((TMR1H << 8) | TMR1L);
@@ -78,8 +78,8 @@ void Timer1_Initialize(void)
     PIR1bits.TMR1IF = 0;
     PIR1bits.TMR1GIF = 0;
     
-    //TMRON disabled; TRD16 disabled; nTSYNC synchronize; TCKPS 1:8; 
-    T1CON = 0x30;
+    //TMRON disabled; TRD16 disabled; nTSYNC synchronize; TCKPS 1:1; 
+    T1CON = 0x0;
 }
 
 void Timer1_Start(void)

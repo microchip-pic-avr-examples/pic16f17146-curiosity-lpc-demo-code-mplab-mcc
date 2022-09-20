@@ -56,10 +56,11 @@ const uart_drv_interface_t UART1 = {
     .TransmitDisable = &EUSART1_TransmitDisable,
     .AutoBaudSet = NULL,
     .AutoBaudQuery = NULL,
-    .BRGSet = NULL,
-    .BRGGet = NULL,
-    .BaudSet = NULL,
-    .BaudGet = NULL,
+    .BRGCountSet = NULL,
+    .BRGCountGet = NULL,
+    .BaudRateSet = NULL,
+    .BaudRateGet = NULL,
+    .AutoBaudEventEnableGet = NULL,
     .ErrorGet = &EUSART1_ErrorGet,
     .TxCompleteCallbackRegister = NULL,
     .RxCompleteCallbackRegister = NULL,
@@ -100,8 +101,8 @@ void EUSART1_Initialize(void)
     RC1STA = 0x90; 
     //TX9D 0x0; BRGH hi_speed; SENDB sync_break_complete; SYNC asynchronous; TXEN enabled; TX9 8-bit; CSRC client; 
     TX1STA = 0x26; 
-    //SPBRGL 25; 
-    SP1BRGL = 0x19; 
+    //SPBRGL 103; 
+    SP1BRGL = 0x67; 
     //SPBRGH 0; 
     SP1BRGH = 0x0; 
 
@@ -122,13 +123,13 @@ void EUSART1_Deinitialize(void)
 
 inline void EUSART1_Enable(void)
 {
-    RC1STAbits.SREN = 1;
+    RC1STAbits.SPEN = 1;
 
 }
 
 inline void EUSART1_Disable(void)
 {
-    RC1STAbits.SREN = 0;
+    RC1STAbits.SPEN = 0;
 }
 
 inline void EUSART1_TransmitEnable(void)
@@ -208,7 +209,7 @@ void EUSART1_Write(uint8_t txData)
     TX1REG = txData;
 }
 
-char getch(void)
+int getch(void)
 {
     while(!(EUSART1_IsRxReady()));
     return EUSART1_Read();
